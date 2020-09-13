@@ -72,19 +72,20 @@ if(isset($_POST['btn-submit']))
                 </div>
                 <div class="formBx">
                     <form>
-                        <h2>Forgot Password</h2>
-                        <input type="email" name="txtemail" placeholder="User Email">
-                        <input type="submit" name="btn-submit" value="Recover">
-                        <p class="signup">Remember Your Password!!! <a href="index.php">Login Here.</a></p>
-                    </form>
-                </div>
-                <div class="errorBx"><?php
+                      <div class="errorBx"><?php
    if(isset($msg))
    {
     echo $msg;
    }
    ?>
    </div>
+                        <h2>Forgot Password</h2>
+                        <input type="email" name="txtemail" placeholder="User Email">
+                        <input type="submit" name="btn-submit" value="Recover">
+                        <p class="signup">Remember Your Password!!! <a href="index.php">Login Here.</a></p>
+                    </form>
+                </div>
+               
             </div>
         </div>
     </section>
