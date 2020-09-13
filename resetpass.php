@@ -69,6 +69,12 @@ if(isset($_GET['id']) && isset($_GET['code']))
                 </div>
                 <div class="formBx">
                     <form>
+                     <div class="errorBx"><?php
+        if(isset($msg))
+  {
+   echo $msg;
+  }
+  ?></div>
                         <h2>Reset Password</h2>
                         <input type="password" name="pass" placeholder="New Password">
                         <input type="password" name="confirm-pass" placeholder="Confirm Password">
@@ -77,12 +83,7 @@ if(isset($_GET['id']) && isset($_GET['code']))
                         </p>
                     </form>
                 </div>
-                <div class="errorBx"><?php
-        if(isset($msg))
-  {
-   echo $msg;
-  }
-  ?></div>
+                
             </div>
         </div>
     </section>
